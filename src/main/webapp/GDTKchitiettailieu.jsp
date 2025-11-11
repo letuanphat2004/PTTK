@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-<h2>Chi tiết các lần mượn cho: ${documentName}</h2>
+<h2>Chi tiết các lần mượn  ${documentName}</h2>
 
 <a href="docStats?startDate=${startDate}&endDate=${endDate}">Quay lại thống kê</a>
 

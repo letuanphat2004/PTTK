@@ -1,11 +1,10 @@
-package com.libman.libman1.controller;
+package com.libman.libman1.servlet;
 
 import com.libman.libman1.dao.BorrowDetailDAO;
-import com.libman.libman1.entity.BorrowDetail;
-// (Bạn nên có DocumentDAO để lấy tên tài liệu)
-// import com.libman.libman1.dao.DocumentDAO;
-// import com.libman.libman1.entity.Document;
+import com.libman.libman1.dao.DocumentDAO;
+import com.libman.libman1.model.BorrowDetail;
 
+import com.libman.libman1.model.Documents;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -20,12 +19,12 @@ import java.util.List;
 public class BorrowDetailServlet extends HttpServlet {
 
     private BorrowDetailDAO borrowDetailDAO;
-    // private DocumentDAO documentDAO;
+     private DocumentDAO documentDAO;
 
     @Override
     public void init() {
         borrowDetailDAO = new BorrowDetailDAO();
-        // documentDAO = new DocumentDAO();
+        documentDAO = new DocumentDAO();
     }
 
     @Override
@@ -38,7 +37,7 @@ public class BorrowDetailServlet extends HttpServlet {
 
             List<BorrowDetail> instances;
 
-            if (startDateStr != null && !startDateStr.equals("null") && !startDateStr.isEmpty()) {
+            if (startDateStr != null && !startDateStr.equals("null") && !startDateStr   .isEmpty()) {
                 LocalDate startDate = LocalDate.parse(startDateStr);
                 LocalDate endDate = LocalDate.parse(endDateStr);
                 instances = borrowDetailDAO.getBorrowDetailListByDate(docId, startDate, endDate);
@@ -50,10 +49,9 @@ public class BorrowDetailServlet extends HttpServlet {
 
                 instances = borrowDetailDAO.getAllBorrowDetailList(docId);
             }
+            Documents doc = documentDAO.getDocumentById(docId);
 
-
-            request.setAttribute("documentName", "Tên tài liệu demo");
-
+            request.setAttribute("document", doc);
             request.setAttribute("borrowInstances", instances);
             request.getRequestDispatcher("GDTKchitiettailieu.jsp").forward(request, response);
 

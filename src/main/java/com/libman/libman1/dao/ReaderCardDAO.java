@@ -1,5 +1,4 @@
 package com.libman.libman1.dao;
-import com.libman.libman1.entity.ReaderCard;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

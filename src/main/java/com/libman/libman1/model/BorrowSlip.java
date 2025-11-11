@@ -1,4 +1,4 @@
-package com.libman.libman1.entity;
+package com.libman.libman1.model;
 import java.util.List;
 
 public class BorrowSlip {
@@ -6,7 +6,7 @@ public class BorrowSlip {
     private String readerName;
     private String staffName;
     private String note;
-    private List<SlipItem> items; // Danh sách các tài liệu đã mượn
+    private List<SlipItem> items;
 
     // Getters và Setters
     public int getSlipId() { return slipId; }

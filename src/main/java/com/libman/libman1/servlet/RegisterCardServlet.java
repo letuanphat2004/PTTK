@@ -1,8 +1,8 @@
-package com.libman.libman1.controller;
+package com.libman.libman1.servlet;
 
 import com.libman.libman1.dao.ReaderCardDAO; // Import DAO thẻ
 import com.libman.libman1.dao.UserDAO;       // Import DAO user
-import com.libman.libman1.entity.User;
+import com.libman.libman1.model.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

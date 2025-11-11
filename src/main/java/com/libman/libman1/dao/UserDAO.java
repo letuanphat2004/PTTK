@@ -2,7 +2,7 @@ package com.libman.libman1.dao;
 
 
 
-import com.libman.libman1.entity.User;
+import com.libman.libman1.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

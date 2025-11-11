@@ -1,4 +1,4 @@
-package com.libman.libman1.entity;
+package com.libman.libman1.model;
 
 import java.time.LocalDate;
 

@@ -1,7 +1,7 @@
 package com.libman.libman1.dao;
 
-import com.libman.libman1.entity.BorrowSlip;
-import com.libman.libman1.entity.SlipItem;
+import com.libman.libman1.model.BorrowSlip;
+import com.libman.libman1.model.SlipItem;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

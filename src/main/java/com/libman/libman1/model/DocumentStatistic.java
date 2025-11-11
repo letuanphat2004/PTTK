@@ -1,4 +1,4 @@
-package com.libman.libman1.entity;
+package com.libman.libman1.model;
 
 // DTO: Lớp chứa dữ liệu "ảo" cho giao diện
 public class DocumentStatistic {

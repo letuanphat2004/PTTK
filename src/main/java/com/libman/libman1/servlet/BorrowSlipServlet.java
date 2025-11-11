@@ -1,7 +1,8 @@
-package com.libman.libman1.controller;
+package com.libman.libman1.servlet;
 
 import com.libman.libman1.dao.BorrowSlipDAO;
-import com.libman.libman1.entity.BorrowSlip;
+import com.libman.libman1.model.BorrowSlip;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
