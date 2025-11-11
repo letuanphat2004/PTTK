@@ -103,7 +103,7 @@
             </c:if>
 
             <c:if test="${sessionScope.account.role == 'Manager'}">
-                <a href="docStats">Xem báo cáo thống kê</a>
+                <a href="GDThongke.jsp">Xem báo cáo thống kê</a>
             </c:if>
 
         </div>

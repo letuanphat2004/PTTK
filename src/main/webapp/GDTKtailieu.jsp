@@ -14,7 +14,7 @@
 <body>
 
 <h1>Thống kê Tài liệu theo Lượt mượn</h1>
-<a href="home.jsp">Quay lại trang chủ</a>
+<a href="GDThongke.jsp">Quay lại Menu Báo cáo</a>
 
 <div class="filter-form">
   <form action="docStats" method="GET">
