@@ -6,7 +6,7 @@ public class BorrowSlip {
     private String readerName;
     private String staffName;
     private String note;
-    private List<SlipItem> items;
+    private List<SlipItemDTO> items;
 
     // Getters và Setters
     public int getSlipId() { return slipId; }
@@ -17,6 +17,6 @@ public class BorrowSlip {
     public void setStaffName(String staffName) { this.staffName = staffName; }
     public String getNote() { return note; }
     public void setNote(String note) { this.note = note; }
-    public List<SlipItem> getItems() { return items; }
-    public void setItems(List<SlipItem> items) { this.items = items; }
+    public List<SlipItemDTO> getItems() { return items; }
+    public void setItems(List<SlipItemDTO> items) { this.items = items; }
 }

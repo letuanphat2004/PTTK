@@ -1,7 +1,7 @@
 package com.libman.libman1.model;
 import java.time.LocalDate;
 
-public class SlipItem {
+public class SlipItemDTO {
     private String documentTitle;
     private String status;
     private LocalDate borrowDate;

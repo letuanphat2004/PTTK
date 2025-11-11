@@ -1,7 +1,7 @@
 package com.libman.libman1.dao;
 
 import com.libman.libman1.model.BorrowSlip;
-import com.libman.libman1.model.SlipItem;
+import com.libman.libman1.model.SlipItemDTO;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -50,9 +50,9 @@ public class BorrowSlipDAO {
                 psItems.setInt(1, borrowSlipId);
                 rsItems = psItems.executeQuery();
 
-                List<SlipItem> items = new ArrayList<>();
+                List<SlipItemDTO> items = new ArrayList<>();
                 while (rsItems.next()) {
-                    SlipItem item = new SlipItem();
+                    SlipItemDTO item = new SlipItemDTO();
                     item.setDocumentTitle(rsItems.getString("title"));
                     item.setStatus(rsItems.getString("status"));
                     item.setBorrowDate(rsItems.getDate("borrow_date").toLocalDate());
